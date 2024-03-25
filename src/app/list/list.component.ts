@@ -16,19 +16,24 @@ import { RouterModule } from '@angular/router';
   //imports: [CommonModule, RouterLink],
   imports: [CommonModule],
   templateUrl: './list.component.html',
-  styleUrl: './list.component.css'
+  styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit{
-    ngOnInit(): void{
-      //this.readAll();
-    }
 
-  //constructor(private bs: BackendService) {}
-
-  //bs = inject(BackendService)
   plants: Plant[] = [];
 
-/*
+  constructor(private bs: BackendService) {}
+
+  ngOnInit(): void{
+      this.readAll();
+    }
+
+
+
+  //bs = inject(BackendService)
+
+
+
   readAll(): void {
     this.bs.getAllPlants().subscribe(
         {
@@ -43,7 +48,7 @@ export class ListComponent implements OnInit{
   }
 
 
-
+/*
 
   delete(id: string): void {
     console.log('id', id)
@@ -60,13 +65,15 @@ export class ListComponent implements OnInit{
 
   }
 
-
-
-
-
-
-
  */
+
+
+
+
+
+
+
+
 
 
 
