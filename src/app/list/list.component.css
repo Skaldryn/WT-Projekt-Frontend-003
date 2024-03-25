@@ -1,0 +1,21 @@
+h1{
+  color: black;
+  background-color: darkgreen;
+
+}
+
+main {
+  background-color: rgb(95, 4, 4);
+  color: lightgreen;
+}
+
+body {
+  background-color: darkgreen;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}

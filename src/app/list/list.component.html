@@ -1,0 +1,37 @@
+
+
+
+
+<body>
+<div>
+
+  <h1>Liste aller Pflanzen</h1>
+  <a class="nav-link" href="home"><button>Home</button></a>
+
+
+  <table>
+    <thead>
+        <tr>
+          <th scope ="col">Name</th>
+          <th scope ="col">Lat. Name</th>
+          <th scope ="col">Mehr Infos</th>
+          <th scope ="col">Eintrag Löschen</th>
+        </tr>
+    </thead>
+    <tbody>
+    @for (plants of plants; track plants.id) {
+    <tr>
+        <th scope="row">{{ plants.id }}</th>
+
+        <td>{{ plants.dtName }}</td>
+        <td>{{ plants.latName }}</td>
+
+
+        <td><button class="btn btn-sm btn-danger" (click)="delete(plants.id)">delete</button></td>
+      </tr>
+    }
+    </tbody>
+  </table>
+
+</div>
+</body>
