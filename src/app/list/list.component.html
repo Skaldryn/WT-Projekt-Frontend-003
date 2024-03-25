@@ -1,7 +1,7 @@
 
 
 
-
+<!--
 <body>
 <div>
 
@@ -12,6 +12,8 @@
   <table>
     <thead>
         <tr>
+
+
           <th scope ="col">Name</th>
           <th scope ="col">Lat. Name</th>
           <th scope ="col">Mehr Infos</th>
@@ -19,6 +21,8 @@
         </tr>
     </thead>
     <tbody>
+    -->
+    <!-- This is a comment
     @for (plants of plants; track plants.id) {
     <tr>
         <th scope="row">{{ plants.id }}</th>
@@ -26,12 +30,54 @@
         <td>{{ plants.dtName }}</td>
         <td>{{ plants.latName }}</td>
 
+        -->
 
-        <td><button class="btn btn-sm btn-danger" (click)="delete(plants.id)">delete</button></td>
+
+<!--
+    <tr *ngFor="let plant of plants; let i = index">
+      <th scope="row">{{ plant.id }}</th>
+      <td>{{ plant.dtName }}</td>
+      <td>{{ plant.latName }}</td>
+
+
+        <td><button class="btn btn-sm btn-danger" (click)="delete(plant.id)">delete</button></td>
+
       </tr>
-    }
+
     </tbody>
   </table>
 
 </div>
 </body>
+-->
+
+
+
+
+<div>
+  <h1>Liste aller Pflanzen</h1>
+  <a class="nav-link" routerLink="home"><button>Home</button></a>
+
+  <table>
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Lat. Name</th>
+      <th scope="col">Mehr Infos</th>
+      <th scope="col">Eintrag Löschen</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--
+    <tr *ngFor="let plant of plants">
+      <td>{{ plant.dtName }}</td>
+      <td>{{ plant.latName }}</td>
+
+
+      <td><button class="btn btn-sm btn-danger" (click)="delete(plant.id)">delete</button></td>
+
+    </tr>
+    -->
+    </tbody>
+  </table>
+</div>
