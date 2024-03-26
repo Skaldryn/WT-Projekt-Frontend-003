@@ -48,6 +48,7 @@ export class BackendService {
     return this.http.post<Plant>(this.backendUrl + endpoint, plant);
   }
 
+  /*
   // update a plant
   updateOnePlant(plant :Plant, id : string): Observable<Plant>
   {
@@ -55,6 +56,14 @@ export class BackendService {
     return this.http.put<Plant>(this.backendUrl + endpoint + '/' + id, plant);
 
   }
+
+   */
+
+    updateOnePlant(id : string, data: Plant): Observable<Plant> {
+        let endpoint = '/plants';
+        return this.http.put<Plant>(this.backendUrl + endpoint + '/' + id, data);
+    }
+
 
 
 

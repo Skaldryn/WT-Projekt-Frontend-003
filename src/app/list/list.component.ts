@@ -49,7 +49,7 @@ export class ListComponent implements OnInit{
 
 
 
-/*
+
   delete(id: string): void {
     console.log('id', id)
     this.bs.deleteOnePlant(id).subscribe(
@@ -59,18 +59,21 @@ export class ListComponent implements OnInit{
             this.readAll();
           },
           error: (err) => console.log(err),
-          complete: () => console.log('deleting completed')
+          complete: () => console.log('deleting' ,id ,'completed')
         })
 
 
   }
 
- */
 
+
+    /*
     // NUR VORRÜBERGEHEND!!!!!!!!  ZUM TESTEN!!!!!!!!!!!!!!!
     delete(id: string): void {
         console.log("id :" ,id );
     }
+
+     */
 
 
 

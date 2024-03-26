@@ -5,7 +5,7 @@ import { Plant } from '../shared/plant';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute,Router } from '@angular/router';
 import {FormGroup, FormControl, ReactiveFormsModule} from '@angular/forms';
 
 import { RouterModule } from '@angular/router';
@@ -38,7 +38,8 @@ export class ProfileComponent implements OnInit {
   constructor(
       private route: ActivatedRoute,
       private bs: BackendService,
-      private location: Location
+      private location: Location,
+      private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -68,14 +69,38 @@ export class ProfileComponent implements OnInit {
         });
   }
 
-  update():void
+  updateOnePlant():void
   {
+
+    const values = this.form.value;
+    this.plant.dtname = values.dtnameControl!;
+    this.plant.latname = values.latnameControl!;
+    this.plant.vgebiet = values.vgebietControl!;
+    this.plant.beschr = values.beschrControl!;
+    this.plant.verwend = values.verwendControl!;
+    this.plant.ofgattung = values.ofgattungControl!;
+    this.plant.anbauzeit = values.anbauzeitControl!;
+
+    this.bs.updateOnePlant(this.id, this.plant)
+        .subscribe({
+              next: (response) => {
+                console.log(response);
+                console.log(response.id);
+              },
+              error: (err) => {
+                console.log(err);
+              },
+              complete: () => console.log('updateOnePlant() completed')
+            }
+        );
+    this.router.navigateByUrl('/plant');
 
   }
 
   cancel(): void
   {
 
+    this.location.back();
   }
 
 }
