@@ -1,4 +1,4 @@
-# Frontend06
+# Frontend06               DER AKTUELLE BRANCH IST TRYSTYLING DORT IST AUCH DIE README DATEI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
