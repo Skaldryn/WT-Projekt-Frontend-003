@@ -1,5 +1,5 @@
-
 @import url('../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
 
 
 h1{
@@ -22,10 +22,4 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-}
-thead{
-  color: white;
-}
-tr{
-  color: white;
 }
