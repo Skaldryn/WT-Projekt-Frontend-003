@@ -1,8 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
-body {
-  background-color: darkgreen;
-  color: white;
+html, body {
+  height: 100%;
+
+  padding: 0;
+  background-image: url('./assets/Blumenwiese001.jpg'); /* Path to your image */
+  background-size: cover; /* Adjust as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: black;
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -17,11 +24,11 @@ body {
 }
 
 ACB-footer {
-  position: fixed;
+
   bottom: 0;
   width: 100%;
   background-color: darkgreen;
-  color: white;
+  color: lightgreen;
   text-align: center;
 
 }

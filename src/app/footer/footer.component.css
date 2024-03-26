@@ -1,9 +1,8 @@
 
 
-
 body {
   background-color: green;
-  color: white;
+  color: lightgreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,3 +10,5 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+

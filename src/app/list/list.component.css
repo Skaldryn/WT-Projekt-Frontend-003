@@ -1,10 +1,18 @@
 @import url('../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 
+table {
+  display: block; /* Ensure tbody behaves like a block element */
+  max-height: calc(85vh - 150px); /* Adjust 150px according to your header's height */
+  overflow-y: auto; /* Enable vertical scrolling */
+
+
+
+}
 
 
 h1{
-  color: black;
-  background-color: darkgreen;
+  color: darkgreen;
+
 
 }
 
@@ -13,13 +21,27 @@ main {
   color: lightgreen;
 }
 
+
+
 body {
-  background-color: darkgreen;
-  color: white;
+
+
   display: flex;
   justify-content: center;
 
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+
+/* Adjust width of columns */
+th.profil-column {
+  /*width: 230px; /* Adjust the width as needed */
+
+}
+
+th.delete-column {
+  /*width:300px; /* Adjust the width as needed */
+
 }

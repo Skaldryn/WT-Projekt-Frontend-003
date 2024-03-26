@@ -4,17 +4,21 @@ main {
 }
 
 div{
-  background-color: darkgreen;
+
   color: black;
 
   justify-content: center;
 
 }
 
+
 header{
-  background-color: darkgreen;
-  color: black;
+
+  color: darkgreen;
   align-items: center;
   justify-content: center;
 }
 
+button{
+  background-color: darkgreen;
+}

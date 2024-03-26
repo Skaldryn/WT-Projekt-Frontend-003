@@ -2,6 +2,18 @@
 
 @import url('../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 
+h1{
+    color: darkgreen;
+}
+.button-container {
+    display: flex; /* Use flexbox to arrange buttons horizontally */
+    gap: 20px; /* Adjust the gap between buttons */
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+}
 
 tr
 {
