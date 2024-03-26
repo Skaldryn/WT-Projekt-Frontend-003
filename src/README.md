@@ -50,17 +50,17 @@ die Datenbank wid mit einem Skript aus dem Backend über postman mit GET http://
 
 
 
-Die Homepage lässt einen zwischen der Liste und dem erstellen eines neuen Eintrags wählen.         http://localhost:4200/
+Die Homepage elraube es einem auf die Liste zuzugreifen.        http://localhost:4200/
 
-![img.png](img.png)
+![img_3.png](img_3.png)
 
 
 Die Pflanzenliste zeigt von allen Pflanzen in der Datenbank die deutschen und die lateinischen/wissenschaftlichen Namen.  In der Liste ist es möglich Einträge zu löschen oder sich alle Informationen zu einer Pflanze anzeigen zu lassen.        http://localhost:4200/plant
 
-![img_1.png](img_1.png)
+![img_4.png](img_4.png)
 
 Ein Pflanzenprofil, welches alle Informationen über die Pflanze anzeigt. Dort ist es auch möglich die Informationen anzupassen / zu verändern.            http://localhost:4200/plant/31
 
-![img_2.png](img_2.png)                
+       ![img_5.png](img_5.png)        
 
 
