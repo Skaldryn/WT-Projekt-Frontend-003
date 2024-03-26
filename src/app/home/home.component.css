@@ -6,8 +6,8 @@ h1{
     color: darkgreen;
 }
 .button-container {
-    display: flex; /* Use flexbox to arrange buttons horizontally */
-    gap: 20px; /* Adjust the gap between buttons */
+    display: flex;
+    gap: 20px;  /*lücke zwischen den beiden Buttons*/
     justify-content: center;
 }
 

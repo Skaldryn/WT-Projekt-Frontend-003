@@ -1,11 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+
 
 html, body {
   height: 100%;
 
   padding: 0;
-  background-image: url('./assets/Blumenwiese001.jpg'); /* Path to your image */
-  background-size: cover; /* Adjust as needed */
+  background-image: url('./assets/Blumenwiese001.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -15,12 +15,12 @@ html, body {
 }
 
 .main-content {
-  min-height: calc(80vh - 50px); /* Adjust height to accommodate footer */
+  min-height: calc(80vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px; /* Same height as the footer */
+  padding-bottom: 50px;
 }
 
 ACB-footer {
