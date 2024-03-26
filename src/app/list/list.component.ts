@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
   selector: 'app-list',
   standalone: true,
   //imports: [CommonModule, RouterLink],
-  imports: [CommonModule],
+    imports: [CommonModule, RouterLink],
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
@@ -48,8 +48,8 @@ export class ListComponent implements OnInit{
   }
 
 
-/*
 
+/*
   delete(id: string): void {
     console.log('id', id)
     this.bs.deleteOnePlant(id).subscribe(
@@ -66,6 +66,11 @@ export class ListComponent implements OnInit{
   }
 
  */
+
+    // NUR VORRÜBERGEHEND!!!!!!!!  ZUM TESTEN!!!!!!!!!!!!!!!
+    delete(id: string): void {
+        console.log("id :" ,id );
+    }
 
 
 

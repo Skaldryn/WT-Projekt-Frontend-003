@@ -1,13 +1,13 @@
 export interface Plant {
 
   id:string;
-  dtName:string;
-  latName:string;
-  vGebiet:string;
+  dtname:string;
+  latname:string;
+  vgebiet:string;
   beschr:string;
   verwend:string;
   ofgattung:string;
-  anbauZeit:string;
+  anbauzeit:string;
 
 
 }

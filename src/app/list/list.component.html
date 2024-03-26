@@ -63,20 +63,28 @@
     <tr>
       <th scope="col">Name</th>
       <th scope="col">Lat. Name</th>
-      <th scope="col">Mehr Infos</th>
+      <th scope="col">Profil</th>
       <th scope="col">Eintrag Löschen</th>
     </tr>
     </thead>
     <tbody>
 
-    <tr *ngFor="let plant of plants">
-      <td>{{ plant.dtName }}</td>
-      <td>{{ plant.latName }}</td>
+    <tr *ngFor="let plant of plants; let i = index; "  >
+      <td>{{ plant.dtname }}</td>
+      <td>{{ plant.latname }}</td>
 
 
       <!--
       <td><button class="btn btn-sm btn-danger" (click)="delete(plant.id)">delete</button></td>
       -->
+
+      <a [routerLink]="['/plant', plant.id]"> <span class=" bi bi-pencil-square px-5 "></span></a>
+
+      <span (click)="delete(plant.id)"  class=" bi bi-trash px-5 " ></span>
+
+
+
+
     </tr>
 
     </tbody>

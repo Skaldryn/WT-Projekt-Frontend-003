@@ -12,21 +12,21 @@ import {end} from "@popperjs/core";
 
 export class BackendService {
 
- // backendUrl = 'http://localhost:4000';
+  backendUrl = 'http://localhost:4000';
 
-    baseUrl = 'http://localhost:4000/plants';
+    //baseUrl = 'http://localhost:4000/plants';
 
   constructor(private http: HttpClient) { }
 
   // get all Plants
   getAllPlants(): Observable<Plant[]>
   {
-    //let endpoint = '/plants';
-    //return this.http.get<Plant[]>(this.backendUrl + endpoint);
-      return this.http.get<Plant[]>(this.baseUrl);
+    let endpoint = '/plants';
+    return this.http.get<Plant[]>(this.backendUrl + endpoint);
+      //return this.http.get<Plant[]>(this.baseUrl);
   }
 
-  /*
+
   // delete one Plant
   deleteOnePlant(id:string): Observable<any>
   {
@@ -57,6 +57,6 @@ export class BackendService {
   }
 
 
-   */
+
 
 }
