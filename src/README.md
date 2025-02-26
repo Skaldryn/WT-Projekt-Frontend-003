@@ -61,6 +61,6 @@ Die Pflanzenliste zeigt von allen Pflanzen in der Datenbank die deutschen und di
 
 Ein Pflanzenprofil, welches alle Informationen über die Pflanze anzeigt. Dort ist es auch möglich die Informationen anzupassen / zu verändern.            http://localhost:4200/plant/31
 
-       ![img_5.png](img_5.png)        
+![img_5.png](img_5.png)        
 
 
